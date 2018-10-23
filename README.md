@@ -13,14 +13,15 @@ Clova Friends Robot data
 
 ## obnizの接続方法
 - 右手は GND: 0 pin, VCC :1 pin, SIGNAL :2 pin
-- 左手は GND: 9 pin, VCC :10 pin, SIGNAL :11 pin
+- 左手は GND: 9 pin, VCC :10 pin, SIGNAL :11 pin  
+※obnizとサーボモータの接続には、両端ロングピンヘッダが必要です。
 
 ## 資料について
 - 3D data -> ロボットアームとロボットボディの3Dデータが入っています。
 
-             STLファイル-> 3Dプリントをするときのファイルです。そのまま出力する際はこちらを使ってください。
+             STLファイル-> 3Dプリントをするときのファイル形式です。そのまま出力する際はこちらを使ってください。
              
-             STEPファイル ->　お好きな３DCADで加工ができるファイルです。データ加工後、STLファイルで保存することで３Dプリントができます
+             STEPファイル ->　お好きな３DCADで加工ができるファイル形式です。データ加工後、STLファイルで保存することで３Dプリントができます
              
 - API : APIのソースコードです。参考にしてお使いください。
 - パッケージはのぞいております。利用する場合はパッケージを追加した上でお使いください。
@@ -32,7 +33,7 @@ Clova Friends Robot data
 - 変数はクリエ文字列で出来ております
 1. ID -> obnizのIDを入力してください "XXXX-XXXX"という形にになります
 2. action -> 現在は'start', 'raiseRight', 'raiseLeft', 'dropHand', 'raiseBoth', 'Rage', 'Happy', 'Bye', 'Initial'で動きます
-3. delya -> 最初の動作をするまでに待ち時間を設定することが出来ます。時間はmsecで表現します。
+3. delay -> 最初の動作をするまでに待ち時間を設定することが出来ます。時間はmsecで表現します。
 
 https://bqr0t1cli1.execute-api.ap-northeast-1.amazonaws.com/prod/LINE_clova_obniz/?ID=XXXX-XXXX&action=XXXX&delay=XXXX
 
